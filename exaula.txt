@@ -3,26 +3,42 @@ import java.util.Scanner;
 public class HelloWorld {
     public static void main(String[] args) {
         Scanner ler = new Scanner(System.in);
+        //inicializar Scanner
         int n1;
         int n2;
-        int n3; // n1 = idoso, n2 = gestante, n3 = deficiente
+        int n3; 
+        //declarar variavel
         System.out.print("Digite 1 se voce for idoso: ");
+        //Texto mostrado ao usuario
         n1 = ler.nextInt();
+        // Associa a variavel ao Scanner e ao texto
         System.out.print("Digite 2 se voce for gestante: ");
+        //Texto mostrado ao usuario
         n2 = ler.nextInt();
+        // Associa a variavel ao Scanner e ao texto
         System.out.print("Digite 3 se voce tiver alguma deficiencia: ");
+        //Texto mostrado ao usuario
         n3 = ler.nextInt();
+        // Associa a variavel ao Scanner e ao texto
         if (n1==1) {
+        // if para uma condicao
             System.out.print("Voce esta habilitado a vagas especiais");
+            //Texto mostrado ao usuario
         }
-        if (n2==2) {
+       else if (n2==2) {
+       // else if para outra condicao
             System.out.print("Voce esta habilitado a vagas especiais");
+            //Texto mostrado ao usuario
         }
-        if (n3==3) {
+       else if (n3==3) {
+          // else if para outra condicao
             System.out.print("Voce esta habilitado a vagas especiais");
+            //Texto mostrado ao usuario
         }
         else {
+        // quando  nenhuma condicao eh seguida
             System.out.print("Voce nao esta habilitado a vagas especiais");
+            //Texto mostrado ao usuario
         }
     }
 } 
